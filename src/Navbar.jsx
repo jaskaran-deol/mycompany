@@ -9,7 +9,7 @@ function Navbar() {
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg">
               <NavLink className="navbar-brand" to="/">
-                GrowMore Inc.
+              CacheStack Inc.
               </NavLink>
               <button className="navbar-toggler" type="button">
                 <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ function Navbar() {
                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li className="nav-item active">
                     <NavLink className="nav-link" to="/">
-                      Home <span className="sr-only">(current)</span>
+                      Home
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -38,9 +38,9 @@ function Navbar() {
                     <NavLink
                       activeClassName="menu_active"
                       className="nav-link"
-                      to="/about"
+                      to="/partners"
                     >
-                      About Us
+                      Partners
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -49,7 +49,7 @@ function Navbar() {
                       className="nav-link"
                       to="/contact"
                     >
-                      Contact Us
+                      Contact
                     </NavLink>
                   </li>
                 </ul>

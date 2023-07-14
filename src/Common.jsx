@@ -12,12 +12,11 @@ function Common({ name, imgsrc, visit, btname }) {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {name}
-                    <strong className="brand-name"> GrowMore Inc. </strong>
+                    <strong className="brand-name"> CacheStack Inc. </strong>
                   </h1>
 
                   <h2 className="my-3">
-                    We're a team of talented developers that can help your
-                    business grow!
+                  Discover the limitless potential of mobile and web app development with us. Our passionate team leverages open-source technologies to create bespoke applications that drive engagement, enhance productivity, and transform your digital presence. Experience innovation, reliability, and growth with our tailor-made solutions
                   </h2>
 
                   <div className="mt-3">

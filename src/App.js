@@ -6,6 +6,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
+import Partners from "./Partners";
 import Navbar from "./Navbar";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/service" component={Service} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/partners" component={Partners} />
         <Redirect to="/" />
       </Switch>
     </>
