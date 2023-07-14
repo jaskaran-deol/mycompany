@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <div className="my-5">
-        <h1 className="text-center"></h1>
+        <h1 className="text-center">CacheStack Inc.</h1>
       </div>
       <Common
         name="Grow your business with"
