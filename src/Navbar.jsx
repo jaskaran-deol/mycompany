@@ -1,65 +1,36 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavLink from 'react-bootstrap/NavLink';
 
-function Navbar() {
+function NavbarOne() {
   return (
     <>
-      <div className="container-fluid nav_bg">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <nav className="navbar navbar-expand-lg">
-              <NavLink className="navbar-brand" to="/">
+    <div className="container-fluid nav_bg">
+    <div className="row">
+      <Navbar expand="lg" className="bg-body-tertiary position: fixed">
+        <Container>
+          <Navbar.Brand href="home">
+            <NavLink className="navbar-brand" to="/">
               CacheStack Inc.
-              </NavLink>
-              <button className="navbar-toggler" type="button">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
-              <div
-                className="collapse navbar-collapse"
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to="/">
-                      Home
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      activeClassName="menu_active"
-                      className="nav-link"
-                      to="/service"
-                    >
-                      Services
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      activeClassName="menu_active"
-                      className="nav-link"
-                      to="/partners"
-                    >
-                      Partners
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      activeClassName="menu_active"
-                      className="nav-link"
-                      to="/contact"
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
+            </NavLink>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="home">Home</Nav.Link>
+              <Nav.Link href="service">Services</Nav.Link>
+              <Nav.Link href="partners">Partners</Nav.Link>
+              <Nav.Link href="contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      </div>
       </div>
     </>
   );
 }
 
-export default Navbar;
+export default NavbarOne;

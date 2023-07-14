@@ -5,6 +5,9 @@ import web from "../src/Pictures/img2.png";
 function Home() {
   return (
     <>
+      <div className="my-5">
+        <h1 className="text-center"></h1>
+      </div>
       <Common
         name="Grow your business with"
         imgsrc={web}
