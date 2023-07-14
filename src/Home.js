@@ -8,6 +8,7 @@ function Home() {
       <div className="my-5">
         <h1 className="text-center">CacheStack Inc.</h1>
       </div>
+      <br />
       <Common
         name="Grow your business with"
         imgsrc={web}
